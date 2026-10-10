@@ -63,7 +63,7 @@ func AreSameCurrency(l, r pb.Money) bool {
 	return l.GetCurrencyCode() == r.GetCurrencyCode() && l.GetCurrencyCode() != ""
 }
 
-// AreEquals returns true if values l and r are the equal, including the
+// AreEquals returns true if values l and r are equal, including the
 // currency. This does not check validity of the provided values.
 func AreEquals(l, r pb.Money) bool {
 	return l.GetCurrencyCode() == r.GetCurrencyCode() &&
