@@ -88,7 +88,7 @@ spec:
           value: "{{ .Values.paymentService.name }}:50051"
         - name: EMAIL_SERVICE_ADDR
           value: "{{ .Values.emailService.name }}:5000"
-        - name: CURRENCY_SERVICE_ADDR
+        - name: CHECKOUT_CURRENCY_SERVICE_ADDR
           value: "{{ .Values.currencyService.name }}:7000"
         - name: CART_SERVICE_ADDR
           value: "{{ .Values.cartService.name }}:7070"
